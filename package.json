@@ -1,0 +1,23 @@
+{
+  "name": "case-separated",
+  "version": "0.0.0",
+  "main": "case-separated.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "case",
+    "camel",
+    "camelcase"
+  ],
+  "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ileri/case-separated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ileri/case-separated/issues"
+  },
+  "homepage": "https://github.com/ileri/case-separated"
+}
