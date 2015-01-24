@@ -26,4 +26,8 @@ CaseSeparated.prototype.stringify = function(val) {
     return String(val);
 };
 
+CaseSeparated.prototype.is = function(val) {
+    return typeof(val) !== "undefined" && val !== null && String(val).indexOf(this.separator) !== -1;
+};
+
 module.exports = CaseSeparated;
