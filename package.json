@@ -7,8 +7,8 @@
   },
   "keywords": [
     "case",
-    "camel",
-    "camelcase"
+    "separated",
+    "separator"
   ],
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
   "license": "GPL-3.0",

@@ -15,13 +15,13 @@ var CaseSeparated = require("case-camel"),
     caseSeparated = new CaseSeparated("-");
 
 // parse
-caseCamel.parse("this-is-an-example"); // ["this", "is", "an", "example"]
+caseSeparated.parse("this-is-an-example"); // ["this", "is", "an", "example"]
 
 // stringify
-caseCamel.stringify(["this", "is", "an", "example"]); // "this-is-an-example"
+caseSeparated.stringify(["this", "is", "an", "example"]); // "this-is-an-example"
 
 // check
-caseCamel.is("this-is-an-example"); // true
-caseCamel.is("thisIsAnExample"); // false
-caseCamel.is("this"); // false
+caseSeparated.is("this-is-an-example"); // true
+caseSeparated.is("thisIsAnExample"); // false
+caseSeparated.is("this"); // false
 ```
