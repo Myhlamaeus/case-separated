@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         "watch": {
             "js": {
                 "files": [
-                    "case-camel.js"
+                    "case-separated.js"
                 ],
                 "tasks": ["jshint"]
             },
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
             },
             "all": [
                 "Gruntfile.js",
-                "case-camel.js"
+                "case-separated.js"
             ],
             "test": {
                 "options": {
