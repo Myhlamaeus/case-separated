@@ -1,5 +1,6 @@
 {
   "name": "case-separated",
+  "description": "Parse and stringify strings delimited by a certain string (such as _)",
   "version": "0.2.1",
   "main": "case-separated.js",
   "scripts": {
