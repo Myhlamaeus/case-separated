@@ -1,7 +1,7 @@
 {
   "name": "case-separated",
   "description": "Parse and stringify strings delimited by a certain string (such as _)",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
   "bugs": {
     "url": "https://github.com/ileri/case-separated/issues"

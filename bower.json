@@ -1,7 +1,7 @@
 {
   "name": "case-separated",
   "main": "case-separated.js",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://github.com/ileri/case-separated",
   "authors": [
     "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>"
