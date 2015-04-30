@@ -1,64 +1,66 @@
-var CaseSeparated = require("../case-separated"),
-    assert = require("assert");
+/* global describe, it */
 
-describe("case-separated", function() {
-    var separators = [".", "_", "-", "whatever"],
-        tests = [
-            ["T"],
-            ["t"],
-            ["Test"],
-            ["test"],
-            ["this", "Is", "A", "Test"],
-            ["This", "Is", "A", "Test"],
-            ["THIS", "Is", "A", "Test"]
-        ];
+var CaseSeparated = require('../case-separated'),
+  assert = require('assert')
 
-    describe("#parse()", function() {
-        separators.forEach(function(separator) {
-            var caseSeparated = new CaseSeparated(separator);
+describe('case-separated', function () {
+  var separators = ['.', '_', '-', 'whatever'],
+    tests = [
+      ['T'],
+      ['t'],
+      ['Test'],
+      ['test'],
+      ['this', 'Is', 'A', 'Test'],
+      ['This', 'Is', 'A', 'Test'],
+      ['THIS', 'Is', 'A', 'Test']
+  ]
 
-            tests.forEach(function(test) {
-                var name = test.join(separator),
-                    parsed = test;
+  describe('#parse()', function () {
+    separators.forEach(function (separator) {
+      var caseSeparated = new CaseSeparated(separator)
 
-                it(JSON.stringify(name) + " -> " + JSON.stringify(parsed), function() {
-                    assert.deepEqual(caseSeparated.parse(name), parsed);
-                });
-            });
-        });
-    });
+      tests.forEach(function (test) {
+        var name = test.join(separator),
+          parsed = test
 
-    describe("#stringify()", function() {
-        separators.forEach(function(separator) {
-            var caseSeparated = new CaseSeparated(separator);
+        it(JSON.stringify(name) + ' -> ' + JSON.stringify(parsed), function () {
+          assert.deepEqual(caseSeparated.parse(name), parsed)
+        })
+      })
+    })
+  })
 
-            tests.forEach(function(test) {
-                var name = test.join(separator),
-                parsed = test;
+  describe('#stringify()', function () {
+    separators.forEach(function (separator) {
+      var caseSeparated = new CaseSeparated(separator)
 
-                it(JSON.stringify(parsed) + " -> " + JSON.stringify(name), function() {
-                    assert.equal(caseSeparated.stringify(parsed), name);
-                });
-            });
-        });
-    });
+      tests.forEach(function (test) {
+        var name = test.join(separator),
+          parsed = test
 
-    describe("#is()", function() {
-        separators.forEach(function(separator) {
-            var caseSeparated = new CaseSeparated(separator);
+        it(JSON.stringify(parsed) + ' -> ' + JSON.stringify(name), function () {
+          assert.equal(caseSeparated.stringify(parsed), name)
+        })
+      })
+    })
+  })
 
-            tests.forEach(function(test) {
-                var name1 = test.join(separator),
-                    name2 = test.join(separator === separators[0] ? separators[1] : separators[0]),
-                    val1 = test.length > 1;
+  describe('#is()', function () {
+    separators.forEach(function (separator) {
+      var caseSeparated = new CaseSeparated(separator)
 
-                it(JSON.stringify(name1) + " (" + val1 + ")", function() {
-                    assert.equal(caseSeparated.is(name1), val1);
-                });
-                it(JSON.stringify(name2) + " (false)", function() {
-                    assert.equal(caseSeparated.is(name2), false);
-                });
-            });
-        });
-    });
-});
+      tests.forEach(function (test) {
+        var name1 = test.join(separator),
+          name2 = test.join(separator === separators[0] ? separators[1] : separators[0]),
+          val1 = test.length > 1
+
+        it(JSON.stringify(name1) + ' (' + val1 + ')', function () {
+          assert.equal(caseSeparated.is(name1), val1)
+        })
+        it(JSON.stringify(name2) + ' (false)', function () {
+          assert.equal(caseSeparated.is(name2), false)
+        })
+      })
+    })
+  })
+})

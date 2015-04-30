@@ -4,7 +4,7 @@
   "version": "0.2.2",
   "main": "case-separated.js",
   "scripts": {
-      "test": "grunt test"
+      "test": "standard && grunt test"
   },
   "keywords": [
     "case",
