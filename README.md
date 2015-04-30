@@ -1,4 +1,4 @@
-case-separated [![Code Climate](https://codeclimate.com/github/ileri/case-separated/badges/gpa.svg)](https://codeclimate.com/github/ileri/case-separated) [![Build Status](https://travis-ci.org/ileri/case-separated.svg)](https://travis-ci.org/ileri/case-separated)
+case-separated [![Code Climate](https://codeclimate.com/github/ileri/case-separated/badges/gpa.svg)](https://codeclimate.com/github/ileri/case-separated) [![Build Status](https://travis-ci.org/ileri/case-separated.svg)](https://travis-ci.org/ileri/case-separated) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 ==============
 > Parse and stringify strings delimited by a certain string (such as _)
 
