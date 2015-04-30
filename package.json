@@ -2,25 +2,10 @@
   "name": "case-separated",
   "description": "Parse and stringify strings delimited by a certain string (such as _)",
   "version": "0.2.2",
-  "main": "case-separated.js",
-  "scripts": {
-      "test": "standard && grunt test"
-  },
-  "keywords": [
-    "case",
-    "separated",
-    "separator"
-  ],
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ileri/case-separated.git"
-  },
   "bugs": {
     "url": "https://github.com/ileri/case-separated/issues"
   },
-  "homepage": "https://github.com/ileri/case-separated",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.0",
@@ -30,5 +15,20 @@
     "load-grunt-tasks": "^3.0.0",
     "mocha": "^2.1.0",
     "time-grunt": "^1.0.0"
+  },
+  "homepage": "https://github.com/ileri/case-separated",
+  "keywords": [
+    "case",
+    "separated",
+    "separator"
+  ],
+  "license": "MIT",
+  "main": "case-separated.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ileri/case-separated.git"
+  },
+  "scripts": {
+    "test": "standard && grunt test"
   }
 }
