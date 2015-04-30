@@ -11,17 +11,17 @@ $ npm install --save case-separated
 Usage
 --------------
 ```js
-var CaseSeparated = require("case-separated"),
-    caseSeparated = new CaseSeparated("-");
+var CaseSeparated = require('case-separated')
+var caseSeparated = new CaseSeparated('-')
 
 // parse
-caseSeparated.parse("this-is-an-example"); // ["this", "is", "an", "example"]
+caseSeparated.parse('this-is-an-example') // ['this', 'is', 'an', 'example']
 
 // stringify
-caseSeparated.stringify(["this", "is", "an", "example"]); // "this-is-an-example"
+caseSeparated.stringify(['this', 'is', 'an', 'example']) // 'this-is-an-example'
 
 // check
-caseSeparated.is("this-is-an-example"); // true
-caseSeparated.is("thisIsAnExample"); // false
-caseSeparated.is("this"); // false
+caseSeparated.is('this-is-an-example') // true
+caseSeparated.is('thisIsAnExample') // false
+caseSeparated.is('this') // false
 ```
