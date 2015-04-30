@@ -12,7 +12,7 @@
     "separator"
   ],
   "author": "Malte-Maurice Dreyer <dreyer.maltem+dev@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ileri/case-separated.git"
