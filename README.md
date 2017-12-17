@@ -11,7 +11,7 @@ $ npm install --save case-separated
 ## Usage
 
 ```js
-const CaseSeparated = require("case-separated");
+const { CaseSeparated } = require("case-separated");
 const caseSeparated = new CaseSeparated("-");
 
 // parse
