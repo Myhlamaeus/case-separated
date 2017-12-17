@@ -1,5 +1,6 @@
 # case-separated [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Parse and stringify strings delimited by a certain string (such as _)
+
+> Parse and stringify strings delimited by a certain string (such as \_)
 
 ## Installation
 
@@ -10,14 +11,24 @@ $ npm install --save case-separated
 ## Usage
 
 ```js
-const caseSeparated = require('case-separated');
+const CaseSeparated = require("case-separated");
+const caseSeparated = new CaseSeparated("-");
 
-caseSeparated('Rainbow');
+// parse
+caseSeparated.parse("this-is-an-example"); // ['this', 'is', 'an', 'example']
+
+// stringify
+caseSeparated.stringify(["this", "is", "an", "example"]); // 'this-is-an-example'
+
+// check
+caseSeparated.is("this-is-an-example"); // true
+caseSeparated.is("thisIsAnExample"); // false
+caseSeparated.is("this"); // false
 ```
+
 ## License
 
 MIT © [Malte-Maurice Dreyer](https://github.com/Myhlamaeus)
-
 
 [npm-image]: https://badge.fury.io/js/case-separated.svg
 [npm-url]: https://npmjs.org/package/case-separated
