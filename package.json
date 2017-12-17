@@ -1,23 +1,17 @@
 {
   "name": "case-separated",
-  "version": "0.0.0",
-  "description": "Parse and stringify strings delimited by a certain string (such as _)",
+  "version": "0.3.0",
+  "description":
+    "Parse and stringify strings delimited by a certain string (such as _)",
   "homepage": "https://github.com/Myhlamaeus/case-separated",
   "author": {
     "name": "Malte-Maurice Dreyer",
     "email": "dreyer.maltem+dev@gmail.com",
     "url": "https://github.com/Myhlamaeus"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib/index.js",
-  "keywords": [
-    "convert",
-    "case",
-    "separated",
-    "separator"
-  ],
+  "keywords": ["convert", "case", "separated", "separator"],
   "devDependencies": {
     "coveralls": "^2.13.1",
     "nsp": "^2.6.3",
@@ -31,6 +25,9 @@
     "jest": "^21.0.0",
     "jest-cli": "^21.0.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "prepublish": "nsp check",
     "pretest": "eslint .",
@@ -38,20 +35,11 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -65,9 +53,7 @@
         }
       ]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "repository": "git@github.com:Myhlamaeus/case-separated.git",
   "jest": {
